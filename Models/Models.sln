@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models.csproj", "{DE873915-CFB0-48B2-B084-700979430964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Services", "..\Services\Services.csproj", "{33EB95E6-187A-46CE-9776-49BA108DB613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookSwapGUI", "..\BookSwapGUI\BookSwapGUI.csproj", "{70BB2CBC-0D6F-4D48-ABE7-34F92584981C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DE873915-CFB0-48B2-B084-700979430964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE873915-CFB0-48B2-B084-700979430964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE873915-CFB0-48B2-B084-700979430964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE873915-CFB0-48B2-B084-700979430964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33EB95E6-187A-46CE-9776-49BA108DB613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33EB95E6-187A-46CE-9776-49BA108DB613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33EB95E6-187A-46CE-9776-49BA108DB613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33EB95E6-187A-46CE-9776-49BA108DB613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70BB2CBC-0D6F-4D48-ABE7-34F92584981C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70BB2CBC-0D6F-4D48-ABE7-34F92584981C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70BB2CBC-0D6F-4D48-ABE7-34F92584981C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70BB2CBC-0D6F-4D48-ABE7-34F92584981C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
