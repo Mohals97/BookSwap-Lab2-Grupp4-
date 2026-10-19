@@ -142,7 +142,7 @@ namespace BookSwapGUI
             }
 
             DialogResult svar = MessageBox.Show
-                ( "Vill du verkligen ta bort kursen?", "Bekräfta borttagning", MessageBoxButtons.YesNo,MessageBoxIcon.Question);
+                ("Vill du verkligen ta bort kursen?", "Bekräfta borttagning", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
             if (svar != DialogResult.Yes)
                 return;
@@ -157,6 +157,11 @@ namespace BookSwapGUI
 
 
 
+        }
+
+        private void btnTillbaka_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

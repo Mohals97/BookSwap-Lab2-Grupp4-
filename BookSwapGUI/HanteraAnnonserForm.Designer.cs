@@ -74,6 +74,7 @@
             btnTillbaka.TabIndex = 3;
             btnTillbaka.Text = "Tillbaka";
             btnTillbaka.UseVisualStyleBackColor = true;
+            btnTillbaka.Click += btnTillbaka_Click;
             // 
             // HanteraAnnonserForm
             // 

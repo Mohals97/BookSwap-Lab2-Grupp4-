@@ -61,7 +61,7 @@ namespace BookSwapGUI
                 return;
             }
 
-            
+
             bool harAffär = _databas.Affärer
                 .Any(a => a.Annons == annons);
 
@@ -72,11 +72,11 @@ namespace BookSwapGUI
                 return;
             }
 
-                 DialogResult svar = MessageBox.Show(
-                "Vill du verkligen ta bort annonsen: " + annons.Titel + "?",
-                "Bekräfta borttagning",
-                MessageBoxButtons.YesNo,
-                MessageBoxIcon.Warning);
+            DialogResult svar = MessageBox.Show(
+           "Vill du verkligen ta bort annonsen: " + annons.Titel + "?",
+           "Bekräfta borttagning",
+           MessageBoxButtons.YesNo,
+           MessageBoxIcon.Warning);
 
             if (svar != DialogResult.Yes)
                 return;
@@ -108,25 +108,30 @@ namespace BookSwapGUI
                 return;
             }
 
-                string information =
-                "AnnonsID: " + annons.AnnonsID + "\n" +
-                "Titel: " + annons.Titel + "\n" +
-                "Annonstyp: " + annons.GetType().Name + "\n" +
-                "Pris: " + annons.Pris + " kr\n" +
-                "Skick: " + annons.Skick + "\n" +
-                "Status: " + annons.Status + "\n" +
-                "Säljare: " + annons.Säljare.Förnamn + " " +
-                             annons.Säljare.Efternamn + "\n" +
-                "E-post: " + annons.Säljare.Epost + "\n" +
-                "Kurs: " + annons.Kurs.Kursnamn + "\n" +
-                "Publicerad: " +
-                annons.Publiceringsdatum.ToString("yyyy-MM-dd");
+            string information =
+            "AnnonsID: " + annons.AnnonsID + "\n" +
+            "Titel: " + annons.Titel + "\n" +
+            "Annonstyp: " + annons.GetType().Name + "\n" +
+            "Pris: " + annons.Pris + " kr\n" +
+            "Skick: " + annons.Skick + "\n" +
+            "Status: " + annons.Status + "\n" +
+            "Säljare: " + annons.Säljare.Förnamn + " " +
+                         annons.Säljare.Efternamn + "\n" +
+            "E-post: " + annons.Säljare.Epost + "\n" +
+            "Kurs: " + annons.Kurs.Kursnamn + "\n" +
+            "Publicerad: " +
+            annons.Publiceringsdatum.ToString("yyyy-MM-dd");
 
-                 MessageBox.Show(
-                information,
-                "Granska annons",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
+            MessageBox.Show(
+           information,
+           "Granska annons",
+           MessageBoxButtons.OK,
+           MessageBoxIcon.Information);
+        }
+
+        private void btnTillbaka_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

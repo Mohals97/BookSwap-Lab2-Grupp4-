@@ -123,6 +123,7 @@
             btnTillbaka.TabIndex = 8;
             btnTillbaka.Text = "Tillbaka";
             btnTillbaka.UseVisualStyleBackColor = true;
+            btnTillbaka.Click += btnTillbaka_Click;
             // 
             // HanteraKurserForm
             // 
